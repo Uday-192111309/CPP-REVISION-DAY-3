@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+class Sum_Series
+{
+	public:
+		Sum_Series (int number)
+		{
+			int sum=0;
+				cout<<"Please input the number of terms.";
+				cin>>number;
+				for(int i=1;i<=number;i++)
+				{
+					sum += i;
+				}
+				cout<<"The sum of Series is "<<sum;
+		}
+	};
+		int main()
+		{
+			Sum_Series obj(5);
+		}
+    
