@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class cubenumber
+{
+	private:
+		int i,n;
+		public:
+			cubenumber()
+	        {
+	        	i=1;
+	        	n=0;
+	        }
+	        cubenumber(int p, int q)
+	        {
+	        	i=p;
+	        	n=q;
+			}
+			void display()
+			{
+				cout<<"Please enter the number:"<<endl;
+				cin>>n;
+				for(i=1; i<=n; i++)
+				{
+							cout<<" cube of "<<i<<" is:"<<(i*i*i)<<endl;	
+				}
+			}
+		};
+int main()
+   {
+   	int p,q;
+	cubenumber object(p,q);
+	cubenumber object2;
+	object.display();
+}
